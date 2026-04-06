@@ -25,13 +25,14 @@ Testes realizados para validar o funcionamento de um sistema de desconto simples
 
 ---
 
-## ✅ Teste 003 — Validação da regra de negócio
+## ⚠️ Teste 003 — Validação da regra de negócio
 
-- **Entrada:** `das`  
+- **Entrada:** `70` (70%)
+- **Cenário:** As regras de negócio não permitem descontos menores que 0% ou maiores que 50%.
 - **Resultado esperado:**  
-  O sistema deve exibir uma mensagem de erro sem travar.  
+  O sistema deve exibir uma mensagem de erro clara.  
 - **Resultado obtido:**  
-  ✔️ Exibiu mensagem de erro corretamente, sem travamento.
+   ❌ Não exibiu mensagem de erro e prosseguiu.
   
 ---
 
@@ -49,7 +50,8 @@ Testes realizados para validar o funcionamento de um sistema de desconto simples
 ## 📌 Conclusão
 
 O sistema apresenta falhas em:
+- Validação das regras de negócio
 - Validação de números negativos
 - Aplicação correta do desconto
 
-Por outro lado, a validação de entrada com caracteres inválidos está funcionando corretamente.
+Por outro lado, a validação de entrada com caracteres inválidos está funcionando corretamente, porém, poderia exibir uma mensagem mais clara dizendo porque o sistema deu erro.
