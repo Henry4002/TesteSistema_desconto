@@ -5,7 +5,7 @@ Testes realizados para validar o funcionamento de um sistema de desconto simples
 
 ---
 
-## ✅ Teste 001 — Validação de números negativos
+## ⚠️ Teste 001 — Validação de números negativos
 
 - **Entrada:** `-1`  
 - **Resultado esperado:**  
@@ -25,7 +25,17 @@ Testes realizados para validar o funcionamento de um sistema de desconto simples
 
 ---
 
-## ⚠️ Teste 003 — Cálculo de desconto
+## ✅ Teste 003 — Validação da regra de negócio
+
+- **Entrada:** `das`  
+- **Resultado esperado:**  
+  O sistema deve exibir uma mensagem de erro sem travar.  
+- **Resultado obtido:**  
+  ✔️ Exibiu mensagem de erro corretamente, sem travamento.
+  
+---
+
+## ⚠️ Teste 004 — Cálculo de desconto
 
 - **Entrada:** `20` (20%)  
 - **Cenário:** Aplicar desconto sobre R$100  
